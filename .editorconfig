@@ -1,0 +1,11 @@
+[*]
+indent_style = space
+
+[*.html]
+indent_size = 2
+
+[*.css]
+indent_size = 2
+
+[*.{js,ts}]
+indent_size = 2

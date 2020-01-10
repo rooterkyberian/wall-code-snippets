@@ -1,0 +1,12 @@
+# See http://pre-commit.com for more information
+
+repos:
+  - repo: https://github.com/prettier/prettier
+    rev: 1.18.2
+    hooks:
+      - id: prettier
+
+  - repo: git://github.com/python/black
+    rev: 19.10b0
+    hooks:
+      - id: black
