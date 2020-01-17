@@ -11,7 +11,7 @@ with patch("sys.stdout", new_callable=io.StringIO) as mock_stdout:
     importlib.import_module("this")
     ZEN = mock_stdout.getvalue()
 
-settings.configure(DEBUG=False, ALLOWED_HOSTS="localhost", ROOT_URLCONF=__name__)
+settings.configure(DEBUG=False, ALLOWED_HOSTS="*", ROOT_URLCONF=__name__)
 application = get_wsgi_application()
 urlpatterns = [path("", lambda _: HttpResponse(ZEN, content_type="text/plain"))]
 
